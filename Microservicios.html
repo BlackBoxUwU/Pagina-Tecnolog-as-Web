@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <img src="IMG/Logo_UAA.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo de la UAA">
+            
+            <a class="navbar-brand" href="index.html">Tecnologías Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Tecnologias.html">Tecnologías de Web APIs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTTP.html">HTTP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Microservicios.html">Microservicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Desarrollo_web.html">Desarrollo de una Web API</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contenedores.html">Contenedores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Desarrollo_nube.html">Aplicaciones para la Nube</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Formulario.html">Formulario</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="p-3 rounded-3 bg-light">
+            <div class="text-primary text-center"><h4><img src="IMG/logo_micro.jpg" width="40" height="40" class="d-inline-block align-top" alt="Logo Micro">
+                Microservicios </h4></div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">¿Qué es un microservicio?</h5>
+                    <p class="card-text">Los microservicios son un enfoque arquitectónico y 
+                        organizativo para el desarrollo de software donde el software está 
+                        compuesto por pequeños servicios independientes que se comunican 
+                        a través de API bien definidas. <br>
+                        Cada microservicio se enfoca en resolver 
+                        una función específica del negocio y puede ser desarrollado, 
+                        desplegado y escalado de manera independiente. Esta independencia 
+                        permite que diferentes equipos trabajen en servicios distintos sin 
+                        interferir entre sí, acelerando el ciclo de desarrollo.<br>
+                        Los microservicios ofrecen flexibilidad de almacenamiento según necesidades
+                        específicas. Se comunican mediante protocolos ligeros como HTTP/REST o 
+                        mensajería asíncrona, facilitando la integración entre diversas 
+                        plataformas.</p>
+
+                        <div id="carouselMicro" class="carousel slide mt-3" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="IMG/microservicios.png" class="d-block w-75 rounded mx-auto" alt="Microservicios1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="IMG/microservicios2.png" class="d-block w-75 rounded mx-auto" alt="Microservicios2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMicro" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMicro" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+
+                </div>
+            </div>
+            
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title text-success">¿Qué hace la arquitectura de microservicios?</h5>
+                    <p class="card-text">Una arquitectura de microservicios es ágil, escalable y 
+                        admite una implementación rápida, en comparación con una arquitectura 
+                        monolítica. Esto permite un mantenimiento y desarrollo más eficiente 
+                        sin afectar otros microservicios. Además, los equipos pueden elegir la
+                        mejor herramienta para cada necesidad. <br>
+                        Esta flexibilidad tecnológica significa que cada servicio puede 
+                        utilizar el lenguaje de programación, base de datos o framework 
+                        más adecuado para su función específica, optimizando así el rendimiento 
+                        y la experiencia de desarrollo.</p>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Beneficios de migrar a microservicios</h5>
+                    <p class="card-text">La migración desde arquitecturas monolíticas 
+                        hacia microservicios ofrece ventajas significativas para o
+                        rganizaciones que buscan mayor agilidad y escalabilidad. 
+                        Los equipos de desarrollo pueden trabajar de forma más autónoma, 
+                        con ciclos de entrega más rápidos y menor riesgo de impacto entre 
+                        componentes. La escalabilidad selectiva permite optimizar recursos 
+                        computacionales, dimensionando solo los servicios que experimentan 
+                        mayor demanda. Esta arquitectura también mejora la resiliencia del 
+                        sistema, ya que un fallo en un microservicio no necesariamente compromete 
+                        la funcionalidad del sistema completo.</p>
+                </div>
+            </div>
+            
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title text-info">¿Qué es una arquitectura monolítica?</h5>
+                    <p class="card-text">En una arquitectura monolítica, todas las funciones 
+                        se ejecutan como un solo servicio. Esto significa que, si un proceso experimenta 
+                        un pico de demanda, se debe escalar toda la arquitectura. Su disponibilidad y 
+                        escalabilidad dependen completamente del hardware subyacente. <br>
+                        El código fuente está organizado como una única unidad donde todos 
+                        los componentes comparten recursos, bases de datos y están fuertemente 
+                        acoplados, lo que facilita el desarrollo inicial pero complica el mantenimiento 
+                        a largo plazo.</p>
+                        <div class="d-flex justify-content-between mt-3">
+                            <img src="IMG/mono_vs_micro.png" class="img-fluid rounded w-50" alt="Monolítica vs Microservicio 1">
+                            <img src="IMG/mono2.png" class="img-fluid rounded w-50" alt="Monolítica vs Microservicio 2">
+                        </div>
+                </div>
+            </div>
+            
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">¿Qué problema presenta una arquitectura monolítica?</h5>
+                    <p class="card-text">Agregar o mejorar características en una aplicación monolítica se 
+                        vuelve más complejo a medida que crece la base de código. Además, 
+                        la interdependencia de procesos aumenta el impacto de fallos individuales en 
+                        la disponibilidad del sistema.</p>
+                    <ul class="mt-3">
+                        <li><b>Escalabilidad limitada:</b> Se debe escalar toda la aplicación 
+                            aunque solo una parte necesite más recursos.
+                        </li>
+                        <li><b>Mayor tiempo de inicio:</b> Aplicaciones monolíticas grandes tienen
+                             tiempos de arranque más prolongados.
+                            </li>
+                        <li><b>Dificultad para adoptar nuevas tecnologías:</b> Cambiar componentes o 
+                            frameworks implica reescribir gran parte de la aplicación.
+                        </li>
+                        <li><b>Complejidad creciente:</b> El código se vuelve más difícil 
+                            de entender y mantener con el tiempo.
+                        </li>
+                        <li><b>Implementaciones arriesgadas:</b> Cualquier cambio requiere redesplegar 
+                            toda la aplicación, aumentando el riesgo.
+                        </li>
+                        <li><b>Obstáculos para el desarrollo en equipo:</b> Múltiples equipos
+                            trabajando en el mismo código base generan conflictos y dependencias.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-4 gap-2">
+                <a href="HTTP.html" class="btn btn-secondary">
+                    Anterior: HTTP
+                </a>
+                <a href="Desarrollo_web.html" class="btn btn-primary">
+                    Siguiente: Desarrollo de una Web API
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

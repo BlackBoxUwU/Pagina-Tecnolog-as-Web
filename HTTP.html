@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <img src="IMG/Logo_UAA.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo de la UAA">
+            
+            <a class="navbar-brand" href="index.html">Tecnologías Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Tecnologias.html">Tecnologías de Web APIs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTTP.html">HTTP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Microservicios.html">Microservicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Desarrollo_web.html">Desarrollo de una Web API</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contenedores.html">Contenedores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Desarrollo_nube.html">Aplicaciones para la Nube</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Formulario.html">Formulario</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="p-3 rounded-3 bg-light">
+            <div class="text-primary text-center">
+                <h4><img src="IMG/logo_http.png" width="40" height="40" class="d-inline-block align-top" alt="Logo HTTP"> 
+                    Protocolo HTTP </h4>
+            </div>
+            
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">¿Qué es HTTP?</h5>
+                    <p class="card-text">
+                        HTTP (Hypertext Transfer Protocol) es un protocolo de
+                         comunicación que permite la transferencia de información 
+                         en la web. Es la base de cualquier intercambio de datos en la 
+                         web y sigue un modelo de cliente-servidor, donde el cliente 
+                         (navegador) solicita recursos y el servidor responde con los datos.
+                    </p>
+                    <div class="text-center">
+                        <img src="IMG/info_http.svg" class="img-fluid w-50 rounded" alt="Imagen de HTTP">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Métodos de HTTP</h5>
+                    <table class="table table-bordered">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Método</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>GET</b></td>
+                                <td>Solicita un recurso sin modificarlo.</td>
+                            </tr>
+                            <tr>
+                                <td><b>POST</b></td>
+                                <td>Envía datos al servidor para ser procesados.</td>
+                            </tr>
+                            <tr>
+                                <td><b>PUT</b></td>
+                                <td>Actualiza un recurso o lo crea si no existe.</td>
+                            </tr>
+                            <tr>
+                                <td><b>DELETE</b></td>
+                                <td>Elimina un recurso en el servidor.</td>
+                            </tr>
+                            <tr>
+                                <td><b>PATCH</b></td>
+                                <td>Modifica parcialmente un recurso.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Códigos de estado HTTP</h5>
+                    <ul>
+                        <li><b>100 - Informativos:</b> Indican que la solicitud se ha recibido y el proceso continúa.</li>
+                        <li><b>200 - Éxito:</b> La solicitud fue exitosa y el servidor devolvió la respuesta esperada.</li>
+                        <li><b>300 - Redirecciones:</b> Indican que la solicitud debe ser redirigida a otra ubicación.</li>
+                        <li><b>400 - Errores del cliente:</b> La solicitud tiene un error o falta autenticación.</li>
+                        <li><b>500 - Errores del servidor:</b> Indican que el servidor encontró una situación inesperada.</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary">URIs (Identificadores Uniformes de Recursos)</h5>
+                    <p class="card-text">
+                        Los URIs (Uniform Resource Identifiers) son secuencias de 
+                        caracteres que identifican recursos en la web. En HTTP, los 
+                        URIs se utilizan para localizar y acceder a recursos específicos.
+                    </p>
+                    
+                    <h6 class="mt-3">Clases de URIs:</h6>
+                    <ul>
+                        <li><b>URL (Uniform Resource Locator):</b> Identifican 
+                            recursos por su ubicación en la red. Ejemplo: 
+                            https://www.ejemplo.com/index.html</li>
+                        <li><b>URN (Uniform Resource Name):</b> Identifican recursos 
+                            por nombre en un espacio de nombres específico, independientemente 
+                            de su ubicación. Ejemplo: urn:isbn:0451450523</li>
+                    </ul>
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalURIs">Ver Sintaxis Genérica de URI</button>
+                </div>
+            </div>
+            <div class="modal fade" id="modalURIs" tabindex="-1" aria-labelledby="modalURIsLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalURIsLabel">Sintaxis Genérica de URI</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><code>esquema://autoridad/ruta?consulta#fragmento</code></p>
+                            <ul>
+                                <li><b>Esquema:</b> Indica el protocolo utilizado (http, https, ftp, etc.)</li>
+                                <li><b>Autoridad:</b> Generalmente contiene el nombre de dominio y, opcionalmente, el puerto</li>
+                                <li><b>Ruta:</b> Indica la ubicación específica del recurso en el servidor</li>
+                                <li><b>Consulta:</b> Contiene parámetros adicionales, precedidos por "?"</li>
+                                <li><b>Fragmento:</b> Referencia a una parte específica del recurso, precedido por "#"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-4 gap-2">
+                <a href="Tecnologias.html" class="btn btn-secondary">
+                    Anterior: Tecnologias de Web APIs
+                </a>
+                <a href="Microservicios.html" class="btn btn-primary">
+                    Siguiente: Microservicios
+                </a>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

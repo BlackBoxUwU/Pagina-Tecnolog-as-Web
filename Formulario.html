@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <img src="IMG/Logo_UAA.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo de la UAA">
+            <a class="navbar-brand" href="index.html">Tecnologías Web</a>
+
+            <div class="navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Tecnologias.html">Tecnologías de Web APIs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTTP.html">HTTP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Microservicios.html">Microservicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Desarrollo_web.html">Desarrollo de una Web API</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contenedores.html">Contenedores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Desarrollo_nube.html">Aplicaciones para la Nube</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Formulario.html">Formulario</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Formulario de Conocimientos Generales</h5>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre completo:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">1. ¿Qué tipos de APIs Web existen? (elige todos los que apliquen)</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rest" value="REST">
+                            <label class="form-check-label" for="rest">REST</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="soap" value="SOAP">
+                            <label class="form-check-label" for="soap">SOAP</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="graphql" value="GraphQL">
+                            <label class="form-check-label" for="graphql">GraphQL</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="ftp" value="FTP">
+                            <label class="form-check-label" for="ftp">FTP</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">2. ¿Qué indica el código de estado HTTP 404?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="codigo404" id="4041" value="1">
+                            <label class="form-check-label" for="4041">Recurso encontrado correctamente</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="codigo404" id="4042" value="2">
+                            <label class="form-check-label" for="4042">Error interno del servidor</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="codigo404" id="4043" value="3">
+                            <label class="form-check-label" for="4043">Recurso no encontrado</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="monolitica" class="form-label">3. ¿Qué es una arquitectura monolítica?</label>
+                        <textarea class="form-control" id="monolitica" rows="3"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">4. ¿Cuáles son buenas prácticas para el desarrollo web?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="responsive" value="Responsive">
+                            <label class="form-check-label" for="responsive">Diseño adaptable (Responsive)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="semantico" value="Semantico">
+                            <label class="form-check-label" for="semantico">Uso de HTML semántico</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inline" value="Inline">
+                            <label class="form-check-label" for="inline">Uso excesivo de estilos inline</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="accesibilidad" value="Accesibilidad">
+                            <label class="form-check-label" for="accesibilidad">Considerar accesibilidad</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">5. ¿Cuál es la diferencia principal entre contenedores y máquinas virtuales?</label>
+                        <select class="form-select">
+                            <option selected disabled>Selecciona una opción</option>
+                            <option value="1">Los contenedores son más ligeros y rápidos</option>
+                            <option value="2">Las máquinas virtuales no necesitan sistema operativo</option>
+                            <option value="3">No hay diferencia entre ambos</option>
+                            <option value="4">Los contenedores requieren más recursos</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">6. ¿Cuál es una ventaja del desarrollo de aplicaciones en la nube?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="nube" id="escalabilidad" value="1">
+                            <label class="form-check-label" for="escalabilidad">Escalabilidad bajo demanda</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="nube" id="offline" value="2">
+                            <label class="form-check-label" for="offline">Funcionan solo sin conexión</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="nube" id="gratuito" value="3">
+                            <label class="form-check-label" for="gratuito">Son siempre gratuitas</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="api" class="form-label">7. Explica brevemente qué es una API y su utilidad:</label>
+                        <textarea class="form-control" id="api" rows="2"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">8. ¿Cuál de las siguientes opciones describe mejor Docker?</label>
+                        <select class="form-select">
+                            <option selected disabled>Selecciona una opción</option>
+                            <option value="1">Sistema de bases de datos</option>
+                            <option value="2">Herramienta para contener y desplegar aplicaciones</option>
+                            <option value="3">Lenguaje de programación</option>
+                            <option value="4">Editor de código</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">9. Una Web API permite que distintas aplicaciones se comuniquen entre sí.</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="webapi" id="truewebapi" value="true">
+                            <label class="form-check-label" for="truewebapi">Verdadero</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="webapi" id="falsewebapi" value="false">
+                            <label class="form-check-label" for="falsewebapi">Falso</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comentarios" class="form-label">10. ¿Tienes algún comentario adicional?</label>
+                        <textarea class="form-control" id="comentarios" rows="2"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success me-2">Enviar</button>
+                        <button type="reset" class="btn btn-danger">Borrar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex justify-content-end mt-4">
+                <a href="Desarrollo_nube.html" class="btn btn-secondary">
+                    Anterior: Desarrollo de Aplicaciones para la nube
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

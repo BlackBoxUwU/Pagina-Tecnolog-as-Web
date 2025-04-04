@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de una Web API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <img src="IMG/Logo_UAA.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo de la UAA">
+            
+            <a class="navbar-brand" href="index.html">Tecnologías Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Tecnologias.html">Tecnologías de Web APIs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTTP.html">HTTP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Microservicios.html">Microservicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Desarrollo_web.html">Desarrollo de una Web API</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contenedores.html">Contenedores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Desarrollo_nube.html">Aplicaciones para la Nube</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Formulario.html">Formulario</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="p-3 rounded-3 bg-light">
+            <div class="text-primary text-center"><h4><img src="IMG/desarollo_logo.jpg" width="60" height="40" class="d-inline-block align-top" alt="Logo Desarrollo Web API">
+                Desarrollo de una Web API  </h4></div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Recomendaciones</h5>
+                        <ul>
+                            <li><strong>Definir los objetivos de la API.</strong> Antes de comenzar a desarrollar la API, es fundamental tener una comprensión clara de los problemas que intentará resolver y los usuarios a los que servirá.</li>
+                            <li><strong>Seguir estándares y convenciones.</strong> Es importante seguir los estándares de la industria al desarrollar una API web, como los principios de REST y el uso de JSON o XML.</li>
+                            <li><strong>Documentar la API de manera exhaustiva.</strong> La documentación clara y completa es esencial para que otros desarrolladores puedan entender cómo usarla correctamente. Herramientas como Swagger o Postman pueden ayudar en esto.</li>
+                            <li><strong>Priorizar la seguridad.</strong> Implementar autenticación y autorización para proteger la API de accesos no autorizados.</li>
+                            <li><strong>Versionar la API.</strong> Permite introducir cambios sin afectar a los usuarios existentes.</li>
+                        </ul>
+                
+                        <div class="text-center">
+                            <img src="IMG/seguridad_api.jpg" class="img-fluid w-50 rounded" alt="Seguridad en APIs">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Proceso de Desarrollo de una Web API</h5>
+                        <ol>
+                            <li><strong>Análisis de requerimientos:</strong> Identificar los requisitos funcionales y no funcionales de la API.</li>
+                            <li><strong>Planificación:</strong> Definir los objetivos del proyecto, asignar recursos y estimar tiempos y costos.</li>
+                            <li><strong>Diseño de la API:</strong> Definir endpoints, métodos HTTP, parámetros de solicitud y esquema de autenticación.</li>
+                            <li><strong>Implementación:</strong> Utilizar herramientas y frameworks adecuados, como Express.js para Node.js o Flask para Python.</li>
+                            <li><strong>Pruebas:</strong> Realizar pruebas unitarias y de integración.</li>
+                            <li><strong>Documentación:</strong> Crear documentación clara y detallada con ejemplos de uso y casos de error.</li>
+                            <li><strong>Despliegue:</strong> Implementar la API en un entorno de producción.</li>
+                            <li><strong>Monitoreo y mantenimiento:</strong> Establecer un sistema de monitoreo para detectar problemas y mantener la API eficiente y segura.</li>
+                            <li><strong>Comercialización (opcional):</strong> Publicar la API en mercados de APIs para monetización.</li>
+                        </ol>
+
+                <button type="button" class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#modalPracticas">
+                    Mejores Prácticas en APIs
+                </button>
+                
+                <div class="modal fade" id="modalPracticas" tabindex="-1" aria-labelledby="modalPracticasLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalPracticasLabel">Mejores Prácticas en APIs</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Usar nombres de endpoints descriptivos y consistentes.</li>
+                                    <li>Implementar paginación en consultas grandes para mejorar el rendimiento.</li>
+                                    <li>Usar códigos de estado HTTP adecuados para cada respuesta.</li>
+                                    <li>Proteger los endpoints con autenticación y autorización.</li>
+                                </ul>
+                
+                                <div class="text-center">
+                                    <img src="IMG/buenas_practicas.png" class="img-fluid w-75 rounded" alt="Buenas prácticas en APIs">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning">Video Explicativo</h5>
+                
+                        <div class="accordion mt-3" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                        Buenas Prácticas en APIs REST
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/GfOvz_Ax-I0?start=940" title="Buenas Prácticas en APIs REST"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mt-4 gap-2">
+                    <a href="Microservicios.html" class="btn btn-secondary">
+                        Anterior: Microservicio
+                    </a>
+                    <a href="Contenedores.html" class="btn btn-primary">
+                        Siguiente: Manejo de Contenedores
+                    </a>
+                </div>
+        </div>
+    </div>
+                    
+</body>
+</html>
